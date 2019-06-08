@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">EP1B</string>
+    <string name="s_tv_titulo">EP1B</string>
+    <string name="s_mt_texto">Lista de texto</string>
+    <string name="s_bt_agregar">Agregar</string>
+    <string name="s_tv_texto">Escribir un texto</string>
+    <string name="s_bt_buscar">Buscar</string>
+    <string name="name">Name</string>
 </resources>

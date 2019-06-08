@@ -7,12 +7,82 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tv_titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/s_tv_titulo"
+        android:text="@string/s_tv_titulo"
+        app:layout_constraintBottom_toTopOf="@+id/mt_texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.803" />
 
+    <EditText
+        android:id="@+id/mt_texto"
+        android:layout_width="341dp"
+        android:layout_height="258dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/s_mt_texto"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/bt_agregar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_titulo"
+        android:autofillHints="" />
+
+    <Button
+        android:id="@+id/bt_agregar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:hint="@string/s_bt_agregar"
+        android:text="@string/s_bt_agregar"
+        app:layout_constraintBottom_toTopOf="@+id/tv_texto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mt_texto" />
+
+    <Button
+        android:id="@+id/bt_buscar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="100dp"
+        android:hint="@string/s_bt_buscar"
+        android:text="@string/s_bt_buscar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tv_texto"
+        android:layout_width="341dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:hint="@string/s_tv_texto"
+        android:inputType="textPersonName"
+        android:text="@string/name"
+        app:layout_constraintBottom_toTopOf="@+id/bt_buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:autofillHints="" />
 </android.support.constraint.ConstraintLayout>
